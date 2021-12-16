@@ -1,4 +1,5 @@
 {
+    "$schema": "https://json.schemastore.org/tsconfig",
     "extends": "@tsconfig/node16",
     "compilerOptions": {
         "outDir": "dist",
@@ -6,6 +7,16 @@
         "strict": true,
         "composite": true,
         "sourceMap": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+        "noFallthroughCasesInSwitch": true,
+        "exactOptionalPropertyTypes": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "preserveSymlinks" : true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
         "types": ["node"]
     },
     "include": [],
